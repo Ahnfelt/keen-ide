@@ -1,9 +1,18 @@
 extensions: {}
 cabal-file: project.cabal
+extra-packages: ''
 version: 1
+environment: ghc-7.4.2-stable-13.06
 module-template: ! 'module MODULE_NAME where
 
 '
+ghc-args: []
 modules:
-  Main(src/Main.hs):
-    filename: src/Main.hs
+  Keen.Main:
+    filename: src/Keen/Main.hs
+  Keen.Parser:
+    filename: src/Keen/Parser.hs
+  Keen.Token:
+    filename: src/Keen/Token.hs
+  Keen.Syntax:
+    filename: src/Keen/Syntax.hs
